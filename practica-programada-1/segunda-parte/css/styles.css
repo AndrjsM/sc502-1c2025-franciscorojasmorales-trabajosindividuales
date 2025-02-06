@@ -1,0 +1,114 @@
+body {
+    background-color: #e3f2fd;
+}
+
+.containerCustom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.doctor-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 2rem;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doctor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-nombre {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #2c3e50;
+}
+
+.doctor-especialidad {
+    font-size: 18px;
+    color: #3498db;
+    font-weight: 600;
+}
+
+.doctor-descripcion {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.containerComentarios {
+    display: flex;
+    gap: 20px; 
+    padding: 20px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.comentario {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+.nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.comentario-texto {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.fecha {
+    font-size: 0.9rem;
+    color: #777;
+    text-align: right;
+}
+
+@media (min-width: 768px) { 
+    /* Esta regla @media aplica estilos solo cuando el ancho de la pantalla es de al menos 768 píxeles, 
+       lo que normalmente corresponde a tablets y pantallas más grandes. */
+
+    .comentario { 
+
+        flex: 1 1 calc(33.333% - 40px); 
+        /* Esto define el comportamiento de los elementos dentro de un contenedor flexbox.
+           - '1' significa que el elemento puede crecer si hay espacio disponible.
+           - '1' indica que también puede reducirse si es necesario.
+           - 'calc(33.333% - 40px)' establece el tamaño base, asegurando que cada comentario ocupe
+              aproximadamente un tercio del contenedor padre, restando 40px para compensar márgenes o padding. */
+
+        max-width: calc(33.333% - 40px);  
+        /* Establece un ancho máximo para cada comentario, asegurando que no supere un tercio del ancho total
+           menos 40px, manteniendo un diseño equilibrado. */
+    }
+}
+
