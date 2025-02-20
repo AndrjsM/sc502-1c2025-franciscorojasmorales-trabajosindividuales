@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open index.html",
+            "runtimeExecutable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+            "file": "c:\\Users\\andrj\\OneDrive - Universidad Fidélitas\\Fidelitas\\2025\\I Cuatrimestre\\Ambiente Web ClienteServidor SC-502\\sc502-1c2025-franciscorojasmorales-trabajosindividuales\\practica-programada-2\\ejercicio1\\index.html"
+        }
+    ]
+}
